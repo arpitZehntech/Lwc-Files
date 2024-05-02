@@ -1,0 +1,105 @@
+/* Hero Video */
+.outter.hero-video{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    @media (max-width: 767px) {
+      height: 325px;
+    }
+  }
+  
+  .hero-video {
+    
+  .video-container {
+    height: 550px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    @media (max-width: 767px) {
+      height: 325px;
+    }
+  }
+  
+  video {
+    object-fit: cover; 
+    position: absolute;
+    height: 550px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    @media (max-width: 767px) {
+      height: 325px;
+    }
+  }
+  
+  .video-container:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(black, .2);
+    z-index: 1;
+  }
+  
+  .vedioH1 {
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    padding: 0;
+    line-height: 1;
+    color: var(--my-headingClr);
+    @media (max-width: 767px) {
+      font-size: 32px;
+    }
+    @media (min-width: 768px) {
+      font-size: 52px;
+    }
+  }
+  
+  .desc{
+    color: white;
+    font-weight:400;
+    font-size:18px;
+  }
+  
+  .callout {
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: var(--my-buttonAlign);
+    flex-direction: column;
+    height: 100%;
+    text-align: var(--my-textAlign);
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    margin:auto;
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+  }
+  
+  .vedioButton {
+    text-transform:uppercase;
+    background-color:transparent;
+    border-radius:var(--my-buttonBorderRad);
+    margin-top:20px;
+    background-color:var(--my-buttonClr);
+    padding:15px 30px;
+    color: var(--my-buttonTextClr);
+    text-decoration: none;
+    font-weight: bold;
+    @media (max-width: 767px) {
+      padding: 10px 20px;
+    }
+    }
+    .vedioButton:hover {
+      cursor: pointer;
+      background-color: var(--my-buttonClrHvr);
+      color: var(--my-buttonTextClrHvr);
+    }
+  }
